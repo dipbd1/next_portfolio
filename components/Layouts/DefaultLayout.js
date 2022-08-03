@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AboutMeShort from "../AboutMeShort/ABoutMeShort";
+import MyScene from "../3DModel/MyScene";
 import Navbar from "../Navbar/Navbar";
 
 export default function DefaultLayout() {
@@ -22,7 +23,10 @@ export default function DefaultLayout() {
             {/* <!-- content area --> */}
             <div className="ml-10 mt-20">
               <div>
-                <p className="text-3xl font-bold underline underline-offset-8">Bio</p>
+              {/* here will be my 3d model */}
+                <div className="mt-10 h-96 pl-72">
+                  <MyScene />
+                </div>
               </div>
             </div>
           </main>
