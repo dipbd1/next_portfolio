@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { PresentationControls } from "@react-three/drei";
 
 import Model from "./Model";
 
@@ -19,9 +19,21 @@ export default function MyScene() {
       <directionalLight intensity={2.4} />
       <Suspense fallback={null}>
         {/* <Model position={[0.25, -0.9, 1]} /> */}
-        <Model position={[0, -0.9, 0]} />
+        <PresentationControls
+          global={false} // Spin globally or by dragging the model
+          cursor={true} // Whether to toggle cursor style on drag
+          snap={false} // Snap-back to center (can also be a spring config)
+          speed={5} // Speed factor
+          zoom={1} // Zoom factor when half the polar-max is reached
+          rotation={[0, 0, 0]} // Default rotation
+          polar={[0, Math.PI / 2]} // Vertical limits
+          azimuth={[-Math.PI / 2, Math.PI / 2]} // Horizontal limits
+          // azimuth={[-Infinity, Infinity]} // Horizontal limits
+          config={{ mass: 1, tension: 1700, friction: 26 }} // Spring config
+        >
+          <Model position={[0, -0.9, 0]} />
+        </PresentationControls>
       </Suspense>
-      <OrbitControls />
     </Canvas>
   );
 }

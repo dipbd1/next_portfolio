@@ -2,6 +2,8 @@ import Image from "next/image";
 import AboutMeShort from "../AboutMeShort/ABoutMeShort";
 import MyScene from "../3DModel/MyScene";
 import Navbar from "../Navbar/Navbar";
+import SkillCard from "../SkillCard/SkillCard";
+import { Languages } from "../../data/languages";
 
 export default function DefaultLayout() {
   return (
@@ -21,11 +23,18 @@ export default function DefaultLayout() {
           </aside>
           <main role="main" className="w-full sm:w-2/3 md:w-3/4 pt-1 px-2">
             {/* <!-- content area --> */}
-            <div className="ml-10 mt-20">
-              <div>
-              {/* here will be my 3d model */}
-                <div className="mt-10 h-96 pl-72">
+            <div>
+              <div className="flex justify-start">
+                {/* here will be my 3d model */}
+                <div className="flex-none h-80 w-40 mx-auto">
                   <MyScene />
+                </div>
+
+                {/* here i will start putting my skill sets */}
+                <div className="grid  grid-cols-4 gap-4 self-center mx-auto">
+                  {Languages.map((language) => (
+                    <SkillCard key={language.id} language={language} />
+                  ))}
                 </div>
               </div>
             </div>

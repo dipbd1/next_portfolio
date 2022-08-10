@@ -17,7 +17,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div id="nav-bar" className="py-5 ml-auto mr-20 text-orange-600">
+      <div id="nav-bar" className="pt-5 ml-auto mr-20 text-orange-600">
         <div id="home" className="nav-bar">
           About{" "}
         </div>

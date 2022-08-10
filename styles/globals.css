@@ -1,8 +1,8 @@
+html {
+  background-color: #140005;
+  @apply text-orange-500;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html {
-  background-color: #140005;
-  @apply text-orange-500
-}

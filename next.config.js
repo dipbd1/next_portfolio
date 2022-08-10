@@ -6,6 +6,9 @@
 
 const nextConfig = {
   reactStrictMode: false,
+  images: {
+    domains: ["placeimg.com"],
+  },
 };
 
 // const withTM = require("next-transpile-modules")([
@@ -16,4 +19,4 @@ const nextConfig = {
 
 // module.exports = withPlugins([withTM], nextConfig);
 
-module.export = nextConfig;
+module.exports = nextConfig;
