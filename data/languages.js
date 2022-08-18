@@ -10,7 +10,7 @@ export const Languages = [
     id: 2,
     name: "typescript",
     short_form: "ts",
-    img: "/img/ts.svg",
+    img: "/img/ts.png",
     mark: 8
   },
   {

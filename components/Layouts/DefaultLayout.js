@@ -9,7 +9,7 @@ export default function DefaultLayout() {
   return (
     <>
       {/* shadow-[0px_0px_250px_30px_rgba(0,0,0,0.3)] */}
-      <div className="container rounded-lg mx-auto shadow-[0px_0px_250px_30px_rgba(0,0,0,0.3)] mt-8   shadow-cyan-500/50 ">
+      <div className="container md:w-3/4 rounded-md mx-auto shadow-[0px_0px_250px_30px_rgba(0,0,0,0.3)] mt-8   shadow-cyan-500/50 ">
         {/* <!-- navigation --> */}
         <Navbar />
         <div className="flex flex-row flex-wrap py-4 bg-slate-800/50">
@@ -31,7 +31,7 @@ export default function DefaultLayout() {
                 </div>
 
                 {/* here i will start putting my skill sets */}
-                <div className="grid  grid-cols-4 gap-4 self-center mx-auto">
+                <div className="grid  grid-cols-2 gap-8 -center mx-auto">
                   {Languages.map((language) => (
                     <SkillCard key={language.id} language={language} />
                   ))}
