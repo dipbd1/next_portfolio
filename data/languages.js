@@ -15,9 +15,9 @@ export const Languages = [
   },
   {
     id: 3,
-    name: "dart",
-    short_form: "dart",
-    img: "/img/dart.png",
+    name: "react",
+    short_form: "react",
+    img: "/img/react.png",
     mark: 7
   },
   {
@@ -27,4 +27,11 @@ export const Languages = [
     img: "/img/c.png",
     mark: 7
   },
+  {
+    id: 5,
+    name: "node",
+    short_form: "node",
+    img: "/img/node.png",
+    mark: 8
+  }
 ];

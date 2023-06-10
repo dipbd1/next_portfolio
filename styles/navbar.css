@@ -1,15 +1,8 @@
 /* Navigation Bar (responsive design) */
 
 #nav-bar {
-  /* font-size: 18px; */
-  /* color: white; */
-  /* letter-spacing: 2px; */
+
   word-spacing: 4px;
-
-  /* margin-left: 68%; */
-  /* margin-top: 15vh; */
-
-  /* transition: 0.5s linear; */
   cursor: pointer;
 }
 
@@ -17,11 +10,11 @@
   display: inline;
 }
 
-/* mouseover effects */
+
 .nav-bar:hover {
   transition: 0.2s linear;
 }
-/* line below nav */
+
 .hr_underline {
   width: 400px;
   margin-top: 3px;
@@ -31,14 +24,6 @@
 }
 
 .splash {
-  /* height: 100vh; 100% of view height */
   width: 100%;
-  /* min-width: 800px; to keep #name from text-wrapping */
-  /* background-image: url("https://i.imgur.com/V8qUB9X.jpg"); */
 
-  /* position = relative in this parent else child will move relative to
-  body instead of this parent, removed until sidebar is added again
-  position: relative;
-  */
-  /* position: absolute; */
 }
