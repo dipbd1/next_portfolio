@@ -58,9 +58,9 @@ export default function DefaultLayout() {
               {/* a divider made with tailwind css */}
               <div className="w-full my-4 border-t border-gray-300"></div>
               {/* there will be a job experience card, that will expand and zoom where i can see the details of the job (JSX) */}
-              <div className="gap-2 lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid-cols-1 justify-center w-full mx-6">
+              <div className="gap-2 xl:grid-cols-3 lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid-cols-1 justify-center w-full grid">
                 {Experiences.map((experience) => (
-                  <div key={experience.id} className="py-3">
+                  <div key={experience.id} className="py-1 mx-auto">
                     <JobExperienceCard
                       title={experience.title}
                       company={experience.company}

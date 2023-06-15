@@ -9,7 +9,7 @@ export default function JobExperienceCard({ title, company, description, start_d
   const truncatedDescription = description.slice(0, 50) + "...";
 
   return (
-    <div className="relative">
+    <div>
       <div
         className="bg-slate-700 rounded-lg p-4 cursor-pointer h-72 min-h-fit w-48 hover:bg-slate-800/50 transition-all"
         onClick={handleExpandClick}
