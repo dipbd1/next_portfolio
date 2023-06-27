@@ -2,17 +2,17 @@ import Image from "next/image";
 import AboutMeShort from "../AboutMeShort/ABoutMeShort";
 import MyScene from "../3DModel/MyScene";
 import Navbar from "../Navbar/Navbar";
-import SkillCard from "../SkillCard/SkillCard";
+import SkillCards from "../SkillCards/SkillCards";
 import './defaultLayout.module.css'
-import JobExperienceCard from "../JobExperienceCard/JobExperienceCard";
+import JobExperienceCards from "../JobExperienceCards/JobExperienceCards";
 
-import { Languages } from "../../data/languages";
+import { Languages } from "../../data/skills";
 import { Experiences } from "../../data/experiences";
+import EducationCards from "../EducationCards/EducationCards";
 
 export default function DefaultLayout() {
   return (
     <>
-      {/* shadow-[0px_0px_250px_30px_rgba(0,0,0,0.3)] */}
       <div className="container md:w-3/4 rounded-md mx-auto shadow-[0px_0px_250px_30px_rgba(0,0,0,0.3)] mt-8 shadow-cyan-500/50 ">
         {/* <!-- navigation --> */}
         <Navbar />
@@ -25,22 +25,7 @@ export default function DefaultLayout() {
               <AboutMeShort />
             </div>
           </aside>
-          {/* <main role="main" className="w-full sm:w-2/3 md:w-3/4 pt-1 px-2">
-            <div>
-              <div className="flex justify-start">
 
-                <div className="flex-none h-80 w-40 mx-auto">
-                  <MyScene />
-                </div>
-
-                <div className="grid  grid-cols-2 gap-8 -center mx-auto">
-                  {Languages.map((language) => (
-                    <SkillCard key={language.id} language={language} />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </main> */}
           <main role="main" className="w-full sm:w-2/3 md:w-3/4 pt-1 px-2">
             {/* <!-- content area --> */}
             <div className="flex flex-wrap justify-start">
@@ -50,30 +35,12 @@ export default function DefaultLayout() {
               </div>
 
               {/* here I will start putting my skill sets */}
-              <div className="flex flex-wrap grid-cols-2 gap-8 mx-auto items-center justify-center">
-                {Languages.map((language) => (
-                  <SkillCard key={language.id} language={language} />
-                ))}
-              </div>
+              <SkillCards />
               {/* a divider made with tailwind css */}
               <div className="w-full my-4 border-t border-gray-300"></div>
-              {/* there will be a job experience card, that will expand and zoom where i can see the details of the job (JSX) */}
-              <div className="gap-2 xl:grid-cols-3 lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid-cols-1 justify-center w-full grid">
-                {Experiences.map((experience) => (
-                  <div key={experience.id} className="py-1 mx-auto">
-                    <JobExperienceCard
-                      title={experience.title}
-                      company={experience.company}
-                      description={experience.description}
-                      start_date={experience.start_date}
-                      end_date={experience.end_date}
-                    />
-                  </div>
-                ))}
-              </div>
+              <JobExperienceCards />
               <div className="w-full my-4 border-t border-gray-300"></div>
-
-              {/* there will be a card with my education */}
+              <EducationCards />
               {/* there will be a card with my projects */}
               {/* there will be a card with my hobbies */}
               {/* there will be a card with my contact details */}

@@ -1,4 +1,4 @@
-export const Languages = [
+export const Skills = [
   {
     id: 1,
     name: "javascript",
