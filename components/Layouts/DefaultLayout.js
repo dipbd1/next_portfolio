@@ -30,16 +30,19 @@ export default function DefaultLayout() {
             {/* <!-- content area --> */}
             <div className="flex flex-wrap justify-start">
               {/* here will be my 3d model */}
-              <div className="flex-none h-80 w-40 mx-auto">
-                <MyScene />
+              <div className="flex flex-col lg:flex-row">
+                <div className="flex-grow w-2/3 h-80  mx-auto">
+                  <MyScene />
+                </div>
+
+                {/* here I will start putting my skill sets */}
+                <SkillCards />
               </div>
 
-              {/* here I will start putting my skill sets */}
-              <SkillCards />
               {/* a divider made with tailwind css */}
-              <div className="w-full my-4 border-t border-gray-300"></div>
+              <div className="w-full my-10 border-t border-gray-300"></div>
               <JobExperienceCards />
-              <div className="w-full my-4 border-t border-gray-300"></div>
+              <div className="w-full my-10 border-t border-gray-300"></div>
               <EducationCards />
               {/* there will be a card with my projects */}
               {/* there will be a card with my hobbies */}
