@@ -34,7 +34,7 @@ function SecondCameraController() {
 }
 
 
-export default function MyScene({showPopOverOrNot = true}) {
+export default function DeathStar({showPopOverOrNot = true}) {
     const [showPopover, setShowPopover] = useState(true);
 
     const scale = 0.01;

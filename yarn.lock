@@ -14,6 +14,11 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@codaworks/react-glow@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@codaworks/react-glow/-/react-glow-1.0.6.tgz#8c4bdb6242506b019069c3ea54e38a7fc30c912e"
+  integrity sha512-tlRept1grsMZCh84ZDSEbjRhibjuXeBi+AkZw9ZzdIk45MDbukI3MhH1KVlactWfYcwEQDnfnNEzcErEak3M1Q==
+
 "@eslint/eslintrc@^1.3.0":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.4.1.tgz#af58772019a2d271b7e2d4c23ff4ddcba3ccfb3e"

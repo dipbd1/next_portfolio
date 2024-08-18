@@ -4,7 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow:{
+        'glowAllSide': '0px 0px 5px 5px rgba(0, 0, 0, 0.1)',
+      }
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('@codaworks/react-glow/tailwind')],
 };

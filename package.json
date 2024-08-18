@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codaworks/react-glow": "^1.0.6",
     "@headlessui/react": "^1.7.15",
     "@react-spring/three": "^9.7.4",
     "@react-three/drei": "^9.19.5",
