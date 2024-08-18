@@ -13,7 +13,7 @@ export default function JobExperienceCards() {
     }
   };
 
-  const renderCardsWithExpandFeature = (experience) => {
+  const RenderCardsWithExpandFeature = (experience) => {
 
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -71,7 +71,7 @@ export default function JobExperienceCards() {
       </div>
       <div className="flex flex-wrap items-center justify-center">
         {Experiences.map((experience) => (
-          renderCardsWithExpandFeature(experience)
+          RenderCardsWithExpandFeature(experience)
         ))}
       </div>
     </div>)
