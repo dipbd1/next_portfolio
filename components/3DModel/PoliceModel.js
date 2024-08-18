@@ -8,11 +8,11 @@ Title: SWAT operator
 */
 
 import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 
 export function PoliceModel(props) {
     const group = useRef()
-    const { nodes, materials, animations } = useGLTF('/police.glb')
+    const { nodes, materials } = useGLTF('/police.glb')
     // const { actions } = useAnimations(animations, group)
     return (
         <group ref={group} {...props} dispose={null}>
