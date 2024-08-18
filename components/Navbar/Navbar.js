@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <div className="splash bg-slate-800/50 flex flex-row justify-between p-4">
+        <div className="splash flex flex-row justify-between">
             {/* Fire emoji */}
 
             <div className="flex-shrink-0 self-start">
@@ -16,7 +16,7 @@ export default function Navbar() {
 
             {/* Navigation items */
             }
-            <div id="nav-bar" className="flex flex-wrap items-center text-orange-600 mx-4">
+            <div id="nav-bar" className="flex flex-wrap items-center text-orange-600 ml-4">
                 <div id="home" className="mr-2">
                     Home
                 </div>

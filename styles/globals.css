@@ -1,6 +1,25 @@
 html {
-  background-color: #140005;
-  @apply text-orange-500;
+    background-color: #140005;
+    @apply text-orange-500;
+}
+
+.glow-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+    text-shadow:
+            0 0 5px currentColor,
+            0 0 10px currentColor,
+            0 0 20px currentColor,
+            0 0 30px currentColor,
+            0 0 40px currentColor,
+            0 0 50px currentColor,
+            0 0 60px currentColor;
+    z-index: -1;
 }
 
 /* @media (min-width: 1536px)
