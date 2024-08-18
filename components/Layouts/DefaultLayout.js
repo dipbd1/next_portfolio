@@ -1,4 +1,4 @@
-import AboutMeShort from "../AboutMeShort/ABoutMeShort";
+import AboutMeShort from "../AboutMeShort/AboutMeShort";
 import Navbar from "../Navbar/Navbar";
 import SkillCards from "../SkillCards/SkillCards";
 import './defaultLayout.module.css'
