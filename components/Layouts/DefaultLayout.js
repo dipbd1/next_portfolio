@@ -1,7 +1,7 @@
-import AboutMeShort from "../AboutMeShort/AboutMeShort";
+import AboutMeShort from "../AboutMeShort/AboutMeShort.js";
 import Navbar from "../Navbar/Navbar";
 import SkillCards from "../SkillCards/SkillCards";
-import './defaultLayout.module.css'
+import './DefaultLayout.module.css'
 import BackgroundParticles from "../Backgrounds/SpaceParticles";
 import IndustriesWorkedWith from "../IndustriesWorkedWith/IndustriesWorkedWith";
 
