@@ -3,7 +3,7 @@ import "../styles/navbar.css";
 import useAudio from "../hooks/useAudio";
 
 function MyApp({ Component, pageProps }) {
-  useAudio("/music.mp3");
+  // useAudio("/music.mp3");
 
   return <Component {...pageProps} />;
 }

@@ -58,7 +58,7 @@ export default function ITSF() {
             touchAction: "none", // for mobile
             zIndex: 1,
         }}
-        camera={{ position: [30,20,20] }}
+        camera={{ position: [30,30,10] }}
     >
         <OrbitControls enableZoom={false}/>
         <SpinCameraController />
@@ -96,7 +96,7 @@ export default function ITSF() {
 
 
         <Suspense fallback={null}>
-            <ITSFModel position={[0, -2, 0]} scale="0.016"/>
+            <ITSFModel position={[0, -1.1, 0]} scale="0.016"/>
         </Suspense>
     </Canvas>
 }
