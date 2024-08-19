@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import "../styles/navbar.css";
-import useAudio from "../hooks/useAudio";
+// import useAudio from "../hooks/useAudio";
 
 function MyApp({ Component, pageProps }) {
   // useAudio("/music.mp3");
