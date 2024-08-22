@@ -18,7 +18,7 @@ export const Skills = [
     name: "react",
     short_form: "react",
     img: "/img/react.png",
-    mark: 7
+    mark: 8
   },
   {
     id: 4,
