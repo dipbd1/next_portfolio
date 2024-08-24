@@ -7,12 +7,16 @@ Source: https://sketchfab.com/3d-models/swat-operator-9e82fabf26194896b5ad4a364d
 Title: SWAT operator
 */
 
-import React, { useRef } from 'react'
+import React, {useEffect, useRef} from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function PoliceModel(props) {
     const group = useRef()
     const { nodes, materials } = useGLTF('/police.glb')
+
+    useEffect(() => {
+
+    }, []);
     // const { actions } = useAnimations(animations, group)
     return (
         <group ref={group} {...props} dispose={null}>
